@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{title}}</title>
+</head>
+<body>
+  <div>{% include "h.html" %}</div>
+  
+  <ul class="nav justify-content-center" ><p>i from page 1</p></ul>
+
+  <!-- <form method="GET">
+    <input type="text" name="num1" placeholder="Name">
+    <input type="text" name="num2" placeholder="Name2">
+    {% for i in final %}
+    <input type="text" value="{{i.name}}   {{i.name2}}">
+    <input type="reset" value="rest">
+    {% endfor %}
+   </form> -->    
+ 
+   <form action="w" method="GET">
+    
+  <div class="nav justify-content-center pt-lg-10 "> 
+    <input type="text" name="num1" placeholder="Name"><br><br>
+    <input type="password" name="num2" placeholder="Password">
+    <input type="submit" value="Submit"> 
+    {{title}}
+  </div>
+  </form> 
+{{heading}}  
+  <hr>
+  <div>
+  <P><b></b>Output:</b> </P>
+  {% for i in user_input %}
+  <input type="text" value="{{i.n}}">
+  <input type="text" value="{{i.p}}">
+  {% endfor %}
+  </div>
+
+  <nav aria-label="...">
+    <ul class="pagination nav justify-content-center">
+      <li class="page-item disabled">
+        <a class="page-link">Previous</a>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item active" aria-current="page">
+        <a class="page-link" href="#">2</a>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item">
+        <a class="page-link" href="#">Next</a>
+      </li>
+    </ul>
+  </nav>        
+
+  </body>
+  </html>

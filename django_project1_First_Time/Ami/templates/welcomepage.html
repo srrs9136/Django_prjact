@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Page</title>
+</head>
+<body>
+    
+    <div>{% include "h.html" %}</div>
+    
+    <ul class="nav justify-content-center" ><p>WelCome Page</p></ul>
+  
+    {% for u in user_input  %}
+    {{i.n}}
+    {{i.p}}
+    {% endfor %}    
+    <div style="padding: 20px;">
+        <P><b></b>Output:</b> </P>
+        {% for i in user_input %}
+        <input type="text" value="{{i.n}}">
+        <input type="text" value="{{i.p}}">
+        {% endfor %}
+        </div>
+</body>
+</html>

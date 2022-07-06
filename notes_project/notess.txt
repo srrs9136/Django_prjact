@@ -1,0 +1,6 @@
+open folder 
+pip install  django-admin startproject
+check for:pip freeze
+check all pakage:django-admin
+start project for django-admin startproject project_name
+change port for: python manage.py runserver port_num 

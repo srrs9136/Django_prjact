@@ -1,0 +1,19 @@
+open folder 
+pip install  django-admin startproject
+check for:pip freeze
+check all pakage:django-admin
+start project for django-admin startproject project_name
+change port for: python manage.py runserver port_num 
+
+urls
+urlpatterns = [
+    path('rohit/', admin.site.urls),
+    # path("<str:com>",views.Home),
+    path('o/<slug:coo>',views.details)
+]
+
+dynamic slug,int,str
+
+views
+def details(request,coo):
+    return HttpResponse(f"My data is {coo}")

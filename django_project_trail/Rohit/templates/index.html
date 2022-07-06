@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome page</title>
+</head>
+<body>
+    <p>Welcome Finnaly</p>
+    {{page}}
+    <form method="GET">
+        {% csrf_token %}
+        <input type="text" name ="a">
+        <input type="text" name ="b">
+        <button type="submit">submit</button>
+        <button type="reset">Reset</button>
+    </form>
+    <form>
+        
+        {% for i  in output %}
+        <!-- <input type="text" name ="{{i.Name}}">
+        <input type="text" name ="{{i.Name2}}"> -->
+        {{i.Name}}
+        {{i.Name2}}
+       
+        {% endfor %}
+     
+    </form>
+    {{output}}
+    
+
+    
+    
+</body>
+</html>
